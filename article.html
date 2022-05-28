@@ -82,6 +82,14 @@ img.on("dragstart",function(){return false;});
 
   <link rel="manifest" href="/manifest.json">
 
+
+
+
+
+  <meta name="keywords" content="{{ &keyWords }}" />
+
+
+
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
@@ -127,8 +135,14 @@ img.on("dragstart",function(){return false;});
 
 
 
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 
-  <link rel="canonical" href="http://example.com/2022/01/18/测试github-actions/"/>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/disqusjs@1.2.2/dist/disqus.js"></script>
+
+
+
+
+  <link rel="canonical" href="{{ &url }}"/>
 
 
 
@@ -149,12 +163,6 @@ img.on("dragstart",function(){return false;});
   ga('send', 'pageview');
 </script>
 
-
-
-
-
-<meta name="generator" content="Hexo 5.4.2"></head>
-
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans" class="theme-darling">
 
   
@@ -164,75 +172,89 @@ img.on("dragstart",function(){return false;});
 
   <div class="container sidebar-position-right page-post-detail">
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner">
-		  <nav class="site-nav">
-		  			  <ul id="menu" class="menu">
-		  				  <li class="menu-item menu-item-首页">
-		  					  <a href="/" rel="section">
-		  						  <i class="menu-item-icon fas fa-meteor"></i><br/>
-		  						  首页
-		  					  </a>
-		  				  </li>
-		  				  <li class="menu-item menu-item-实验室">
-		  					  <a href="javascript:;" rel="section">
-		  						  <i class="menu-item-icon fas fa-magic"></i><br/>
-		  						  实验室
-		  					  </a>
-		              <ul class="submenu submenu-实验室">
-		  						  <li class="submenu-item submenu-item-网盘">
-		  							  <a href="https://pan.kunkun.eu.org/" rel="section" target="_blank">
-		  								  网盘
-		  							  </a>
-		  						  </li>
-		                  <li class="submenu-item submenu-item-起始">
-		  							  <a href="https://search.kunkun.eu.org/" rel="section" target="_blank">
-		  								  起始
-		  							  </a>
-		  						  </li>
-		                  <li class="submenu-item submenu-item-链接">
-		  							  <a href="https://url.kunkun.eu.org/" rel="section" target="_blank">
-		  								  链接
-		  							  </a>
-		  						  </li>
-		  						  <li class="submenu-item submenu-item-监控">
-		  							  <a href="https://stats.uptimerobot.com/XPnkGh44pQ/" rel="section" target="_blank">
-		  								  监控
-		  							  </a>
-		  						  </li>
-		  					  </ul>
-		  				  </li>
-		  				  <li class="menu-item menu-item-归档">
-		  					  <a href="/archives/" rel="section">
-		  						  <i class="menu-item-icon fas fa-archive"></i><br/>
-		  						  归档
-		  					  </a>
-		  				  </li>
-		  				  <li class="menu-item menu-item-后宫">
-		  					  <a href="/friends/" rel="section">
-		  						  <i class="menu-item-icon fas fa-mars-stroke"></i><br/>
-		  						  后宫
-		  					  </a>
-		  				  </li>
-		  				  <li class="menu-item menu-item-留言板">
-		  					  <a href="/message/" rel="section">
-		  						  <i class="menu-item-icon fas fa-comment-dots"></i><br/>
-		  						  留言板
-		  					  </a>
-		  				  </li>
-		  				  <li class="menu-item menu-item-关于我">
-		  					  <a href="/about/" rel="section">
-		  						  <i class="menu-item-icon fas fa-heartbeat"></i><br/>
-		  						  关于我
-		  					  </a>
-		  				  </li>
-		  				  <li class="menu-item search">
-		  					  <form class="search-form">
-		  						  <input name="keyword" type="text" class="search-input" placeholder="站内搜索">
-		  						  <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
-		  					  </form>
-		  				  </li>
-		  			  </ul>
-		  </nav>
+      <div class="header-inner"><nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-首页">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fas fa-meteor"></i> <br />
+            
+            首页
+          </a>
+          
+        </li>
+      
+        
+        <li class="menu-item menu-item-实验室">
+          <a href="javascript:;" rel="section">
+            
+              <i class="menu-item-icon fas fa-magic"></i> <br />
+            
+            实验室
+          </a>
+          
+            <ul class="submenu submenu-实验室">
+              
+                
+                <li class="submenu-item submenu-item-网盘">
+                  <a href="https://pan.kunkun.eu.org/" rel="section" target="_blank">
+                    网盘
+                  </a>
+                </li>
+              
+                
+                <li class="submenu-item submenu-item-起始">
+                  <a href="https://search.kunkun.eu.org/" rel="section" target="_blank">
+                    起始
+                  </a>
+                </li>
+              
+                
+                <li class="submenu-item submenu-item-链接">
+                  <a href="https://url.kunkun.eu.org/" rel="section" target="_blank">
+                    链接
+                  </a>
+                </li>
+              
+                
+                <li class="submenu-item submenu-item-监控">
+                  <a href="https://stats.uptimerobot.com/XPnkGh44pQ/" rel="section" target="_blank">
+                    监控
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+
+        <li class="menu-item menu-item-后台">
+          <a href="/admin/" rel="section">
+            
+              <i class="menu-item-icon fas fa-coffee"></i> <br />
+            
+            后台
+          </a>
+          
+        </li>
+      
+
+      
+      <li class="menu-item search">
+          <form class="search-form">
+            <input name="keyword" type="text" class="search-input" placeholder="站内搜索">
+            <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+          </form>
+      </li>
+    </ul>
+  
+
+  
+</nav>
 
 <div class="site-brand-wrapper">
   <div class="site-brand-bg">
@@ -389,8 +411,6 @@ img.on("dragstart",function(){return false;});
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
-
-  
   <div class="post-badge">
     
       <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -398,14 +418,14 @@ img.on("dragstart",function(){return false;});
         <a href="/category/{{&.}}" itemprop="url" rel="index">
           <span itemprop="name">{{&.}}</span>
         </a>
-		  {{ /articleSingle.category }}
+		{{ /articleSingle.category }}
       </span>
     
   </div>
   
 
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/{{ &url }}">
+    <link itemprop="mainEntityOfPage" href="{{ &url }}">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -435,6 +455,11 @@ img.on("dragstart",function(){return false;});
                 <span class="post-meta-item-text">发表于</span>
               
               <time title="创建于" itemprop="dateCreated datePublished" datetime="{{ &articleSingle.createDate }}">{{ &articleSingle.createDate10 }}</time>
+            
+
+            
+
+            
           </span>
         </div>
       </header>
@@ -444,7 +469,6 @@ img.on("dragstart",function(){return false;});
     
     
     <div class="post-body" itemprop="articleBody">
-      
       
       
 
@@ -461,7 +485,12 @@ img.on("dragstart",function(){return false;});
 
     
       <div class="post-share">分享到：</div>
+    
 
+    
+      <div>
+
+      </div>
     
 
     
@@ -470,8 +499,8 @@ img.on("dragstart",function(){return false;});
       
         <div class="post-tags">
           {{ #articleSingle.tags }}
-		  <a href="/tags/{{&.}}" rel="tag">{{&.}}</a>
-		  {{ /articleSingle.tags }}
+            <a href="/tags/{{&.}}" rel="tag">{{&.}}</a>
+          {{ /articleSingle.tags }}
         </div>
       
 
@@ -483,12 +512,13 @@ img.on("dragstart",function(){return false;});
         <div class="post-nav">
 			{{ #articleOlder }}
           <div class="post-nav-next post-nav-item">
+            
               <a href="{{ &url }}" rel="next" title="{{ &title }}">
                 <i class="fas fa-angle-left"></i> {{ &title }}
               </a>
+            
           </div>
 		  {{ /articleOlder }}
-		  
           <span class="post-nav-divider"></span>
 		  {{ #articleNewer }}	
           <div class="post-nav-prev post-nav-item">
@@ -524,10 +554,37 @@ img.on("dragstart",function(){return false;});
 
   
     <div class="comments" id="comments">
-      {{ &OPT.commentCode }}
+      <div id="disqus_thread">
+        <div id="dsqjs">
+          <section class="dsqjs-info">
+            <p id="dsqjs-load-disqus" class="dsqjs-message">评论完整模式加载中...如果长时间无法加载，请针对 disq.us | disqusfastly.com | disqus.com 启用代理</p>
+          </section>
+        </div>
+      </div>
     </div>
 
   
+
+
+
+
+
+  
+
+    
+      <script type="text/javascript">
+        window.DISQUS = null;
+        new DisqusJS({
+          shortname: 'smallkunkun',
+          siteName: 'SmallKunKun',
+          identifier: '{{ &url }}',
+          url: 'https://debug.kunkun.eu.org/2022/01/20/%E4%BD%BF%E7%94%A8hexo-netlify-cms-github-actions-github-pages%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/',
+          api: 'https://disqus.skk.moe/disqus/',
+          apikey: 'vDfPbzqHDP8RuKbEBDdrABxU5sLWK2SMQhLZ8Sp2c6Hkh8mjR180vkJF0u5xzFmr',
+          admin: 'SmallKunKun',
+          adminLabel: '',
+        });
+      </script>
     
 
   
@@ -561,7 +618,7 @@ img.on("dragstart",function(){return false;});
         
           
   
-  <div class="sidebar-toggle">
+<div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
       <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
       <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
@@ -665,13 +722,15 @@ img.on("dragstart",function(){return false;});
         <img src="https://fastly.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/footer.png">
       </div>
       <div class="footer-inner">
-        <p>博客已萌萌哒运行<span id="since"></span><span class="my-face">(●'◡'●)ﾉ♥</span></p>
-		<p>© <span itemprop="copyrightYear">2022</span> SmallKunKun.
-		由 <a href="https://cloudflare.com/" target="_blank" class="external" rel="nofollow">Cloudflare Workers</a> 强力驱动.
-		Theme By <a href="https://github.com/DIYgod/hexo-theme-sagiri" target="_blank" class="external" rel="nofollow">Sagiri</a> v0.0.74.
-		</p>
-		<p>Made with <i class="fas fa-heart throb" style="color: #d43f57;"></i> by <span class="author" itemprop="copyrightHolder">SmallKunKun</span>. </p>
-		</div>
+         <p>博客已萌萌哒运行<span id="since"></span><span class="my-face">(●'◡'●)ﾉ♥</span></p>
+        		<p>© <span itemprop="copyrightYear">2022</span> SmallKunKun.
+        		由 <a href="https://cloudflare.com/" target="_blank" class="external" rel="nofollow">Cloudflare Workers</a> 强力驱动.
+        		Theme By <a href="https://github.com/DIYgod/hexo-theme-sagiri" target="_blank" class="external" rel="nofollow">Sagiri</a> v0.0.74.
+        		</p>
+        		<p>Made with <i class="fas fa-heart throb" style="color: #d43f57;"></i> by <span class="author" itemprop="copyrightHolder">SmallKunKun</span>. </p>
+        		</div>
+
+        
 
 
 
